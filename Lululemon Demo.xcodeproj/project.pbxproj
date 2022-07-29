@@ -1,0 +1,706 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BAE06F4128948CBD0012B043 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06F4028948CBD0012B043 /* Tests_iOS.swift */; };
+		BAE06F4328948CBD0012B043 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06F4228948CBD0012B043 /* Tests_iOSLaunchTests.swift */; };
+		BAE06F4D28948CBD0012B043 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06F4C28948CBD0012B043 /* Tests_macOS.swift */; };
+		BAE06F4F28948CBD0012B043 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06F4E28948CBD0012B043 /* Tests_macOSLaunchTests.swift */; };
+		BAE06F5028948CBD0012B043 /* Lululemon_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06F2828948CBC0012B043 /* Lululemon_DemoApp.swift */; };
+		BAE06F5128948CBD0012B043 /* Lululemon_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06F2828948CBC0012B043 /* Lululemon_DemoApp.swift */; };
+		BAE06F5228948CBD0012B043 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06F2928948CBC0012B043 /* ContentView.swift */; };
+		BAE06F5328948CBD0012B043 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06F2928948CBC0012B043 /* ContentView.swift */; };
+		BAE06F5428948CBD0012B043 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAE06F2A28948CBD0012B043 /* Assets.xcassets */; };
+		BAE06F5528948CBD0012B043 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAE06F2A28948CBD0012B043 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BAE06F3D28948CBD0012B043 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAE06F2328948CBC0012B043 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAE06F2E28948CBD0012B043;
+			remoteInfo = "Lululemon Demo (iOS)";
+		};
+		BAE06F4928948CBD0012B043 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAE06F2328948CBC0012B043 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAE06F3428948CBD0012B043;
+			remoteInfo = "Lululemon Demo (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BAE06F2828948CBC0012B043 /* Lululemon_DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lululemon_DemoApp.swift; sourceTree = "<group>"; };
+		BAE06F2928948CBC0012B043 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BAE06F2A28948CBD0012B043 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BAE06F2F28948CBD0012B043 /* Lululemon Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lululemon Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAE06F3528948CBD0012B043 /* Lululemon Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lululemon Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAE06F3728948CBD0012B043 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		BAE06F3C28948CBD0012B043 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAE06F4028948CBD0012B043 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		BAE06F4228948CBD0012B043 /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
+		BAE06F4828948CBD0012B043 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAE06F4C28948CBD0012B043 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		BAE06F4E28948CBD0012B043 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BAE06F2C28948CBD0012B043 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAE06F3228948CBD0012B043 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAE06F3928948CBD0012B043 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAE06F4528948CBD0012B043 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BAE06F2228948CBC0012B043 = {
+			isa = PBXGroup;
+			children = (
+				BAE06F2728948CBC0012B043 /* Shared */,
+				BAE06F3628948CBD0012B043 /* macOS */,
+				BAE06F3F28948CBD0012B043 /* Tests iOS */,
+				BAE06F4B28948CBD0012B043 /* Tests macOS */,
+				BAE06F3028948CBD0012B043 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BAE06F2728948CBC0012B043 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				BAE06F2828948CBC0012B043 /* Lululemon_DemoApp.swift */,
+				BAE06F2928948CBC0012B043 /* ContentView.swift */,
+				BAE06F2A28948CBD0012B043 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		BAE06F3028948CBD0012B043 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BAE06F2F28948CBD0012B043 /* Lululemon Demo.app */,
+				BAE06F3528948CBD0012B043 /* Lululemon Demo.app */,
+				BAE06F3C28948CBD0012B043 /* Tests iOS.xctest */,
+				BAE06F4828948CBD0012B043 /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BAE06F3628948CBD0012B043 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				BAE06F3728948CBD0012B043 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		BAE06F3F28948CBD0012B043 /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				BAE06F4028948CBD0012B043 /* Tests_iOS.swift */,
+				BAE06F4228948CBD0012B043 /* Tests_iOSLaunchTests.swift */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		BAE06F4B28948CBD0012B043 /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				BAE06F4C28948CBD0012B043 /* Tests_macOS.swift */,
+				BAE06F4E28948CBD0012B043 /* Tests_macOSLaunchTests.swift */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BAE06F2E28948CBD0012B043 /* Lululemon Demo (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAE06F5828948CBD0012B043 /* Build configuration list for PBXNativeTarget "Lululemon Demo (iOS)" */;
+			buildPhases = (
+				BAE06F2B28948CBD0012B043 /* Sources */,
+				BAE06F2C28948CBD0012B043 /* Frameworks */,
+				BAE06F2D28948CBD0012B043 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lululemon Demo (iOS)";
+			productName = "Lululemon Demo (iOS)";
+			productReference = BAE06F2F28948CBD0012B043 /* Lululemon Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BAE06F3428948CBD0012B043 /* Lululemon Demo (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAE06F5B28948CBD0012B043 /* Build configuration list for PBXNativeTarget "Lululemon Demo (macOS)" */;
+			buildPhases = (
+				BAE06F3128948CBD0012B043 /* Sources */,
+				BAE06F3228948CBD0012B043 /* Frameworks */,
+				BAE06F3328948CBD0012B043 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lululemon Demo (macOS)";
+			productName = "Lululemon Demo (macOS)";
+			productReference = BAE06F3528948CBD0012B043 /* Lululemon Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BAE06F3B28948CBD0012B043 /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAE06F5E28948CBD0012B043 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				BAE06F3828948CBD0012B043 /* Sources */,
+				BAE06F3928948CBD0012B043 /* Frameworks */,
+				BAE06F3A28948CBD0012B043 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAE06F3E28948CBD0012B043 /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = BAE06F3C28948CBD0012B043 /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		BAE06F4728948CBD0012B043 /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAE06F6128948CBD0012B043 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				BAE06F4428948CBD0012B043 /* Sources */,
+				BAE06F4528948CBD0012B043 /* Frameworks */,
+				BAE06F4628948CBD0012B043 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAE06F4A28948CBD0012B043 /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = BAE06F4828948CBD0012B043 /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BAE06F2328948CBC0012B043 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					BAE06F2E28948CBD0012B043 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					BAE06F3428948CBD0012B043 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					BAE06F3B28948CBD0012B043 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = BAE06F2E28948CBD0012B043;
+					};
+					BAE06F4728948CBD0012B043 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = BAE06F3428948CBD0012B043;
+					};
+				};
+			};
+			buildConfigurationList = BAE06F2628948CBC0012B043 /* Build configuration list for PBXProject "Lululemon Demo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BAE06F2228948CBC0012B043;
+			productRefGroup = BAE06F3028948CBD0012B043 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BAE06F2E28948CBD0012B043 /* Lululemon Demo (iOS) */,
+				BAE06F3428948CBD0012B043 /* Lululemon Demo (macOS) */,
+				BAE06F3B28948CBD0012B043 /* Tests iOS */,
+				BAE06F4728948CBD0012B043 /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BAE06F2D28948CBD0012B043 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAE06F5428948CBD0012B043 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAE06F3328948CBD0012B043 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAE06F5528948CBD0012B043 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAE06F3A28948CBD0012B043 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAE06F4628948CBD0012B043 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BAE06F2B28948CBD0012B043 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAE06F5228948CBD0012B043 /* ContentView.swift in Sources */,
+				BAE06F5028948CBD0012B043 /* Lululemon_DemoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAE06F3128948CBD0012B043 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAE06F5328948CBD0012B043 /* ContentView.swift in Sources */,
+				BAE06F5128948CBD0012B043 /* Lululemon_DemoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAE06F3828948CBD0012B043 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAE06F4328948CBD0012B043 /* Tests_iOSLaunchTests.swift in Sources */,
+				BAE06F4128948CBD0012B043 /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAE06F4428948CBD0012B043 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAE06F4F28948CBD0012B043 /* Tests_macOSLaunchTests.swift in Sources */,
+				BAE06F4D28948CBD0012B043 /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BAE06F3E28948CBD0012B043 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAE06F2E28948CBD0012B043 /* Lululemon Demo (iOS) */;
+			targetProxy = BAE06F3D28948CBD0012B043 /* PBXContainerItemProxy */;
+		};
+		BAE06F4A28948CBD0012B043 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAE06F3428948CBD0012B043 /* Lululemon Demo (macOS) */;
+			targetProxy = BAE06F4928948CBD0012B043 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BAE06F5628948CBD0012B043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BAE06F5728948CBD0012B043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		BAE06F5928948CBD0012B043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2KLC5XX3QG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Swiftech.Lululemon-Demo";
+				PRODUCT_NAME = "Lululemon Demo";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BAE06F5A28948CBD0012B043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2KLC5XX3QG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Swiftech.Lululemon-Demo";
+				PRODUCT_NAME = "Lululemon Demo";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BAE06F5C28948CBD0012B043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2KLC5XX3QG;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Swiftech.Lululemon-Demo";
+				PRODUCT_NAME = "Lululemon Demo";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BAE06F5D28948CBD0012B043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2KLC5XX3QG;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Swiftech.Lululemon-Demo";
+				PRODUCT_NAME = "Lululemon Demo";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		BAE06F5F28948CBD0012B043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2KLC5XX3QG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Swiftech.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Lululemon Demo (iOS)";
+			};
+			name = Debug;
+		};
+		BAE06F6028948CBD0012B043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2KLC5XX3QG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Swiftech.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Lululemon Demo (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BAE06F6228948CBD0012B043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2KLC5XX3QG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Swiftech.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Lululemon Demo (macOS)";
+			};
+			name = Debug;
+		};
+		BAE06F6328948CBD0012B043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2KLC5XX3QG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Swiftech.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Lululemon Demo (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BAE06F2628948CBC0012B043 /* Build configuration list for PBXProject "Lululemon Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAE06F5628948CBD0012B043 /* Debug */,
+				BAE06F5728948CBD0012B043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAE06F5828948CBD0012B043 /* Build configuration list for PBXNativeTarget "Lululemon Demo (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAE06F5928948CBD0012B043 /* Debug */,
+				BAE06F5A28948CBD0012B043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAE06F5B28948CBD0012B043 /* Build configuration list for PBXNativeTarget "Lululemon Demo (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAE06F5C28948CBD0012B043 /* Debug */,
+				BAE06F5D28948CBD0012B043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAE06F5E28948CBD0012B043 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAE06F5F28948CBD0012B043 /* Debug */,
+				BAE06F6028948CBD0012B043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAE06F6128948CBD0012B043 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAE06F6228948CBD0012B043 /* Debug */,
+				BAE06F6328948CBD0012B043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BAE06F2328948CBC0012B043 /* Project object */;
+}
