@@ -17,6 +17,18 @@
 		BAE06F5328948CBD0012B043 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06F2928948CBC0012B043 /* ContentView.swift */; };
 		BAE06F5428948CBD0012B043 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAE06F2A28948CBD0012B043 /* Assets.xcassets */; };
 		BAE06F5528948CBD0012B043 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAE06F2A28948CBD0012B043 /* Assets.xcassets */; };
+		BAE06F6528948D1F0012B043 /* InventoryGarments.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06F6428948D1F0012B043 /* InventoryGarments.swift */; };
+		BAE06F6628948D1F0012B043 /* InventoryGarments.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06F6428948D1F0012B043 /* InventoryGarments.swift */; };
+		BAE06F6828948D400012B043 /* Garment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06F6728948D400012B043 /* Garment.swift */; };
+		BAE06F6928948D400012B043 /* Garment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06F6728948D400012B043 /* Garment.swift */; };
+		BAE06F6E28948DB10012B043 /* AddGarmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06F6D28948DB10012B043 /* AddGarmentView.swift */; };
+		BAE06F6F28948DB10012B043 /* AddGarmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06F6D28948DB10012B043 /* AddGarmentView.swift */; };
+		BAE06F7128948DE50012B043 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06F7028948DE50012B043 /* DBHelper.swift */; };
+		BAE06F7228948DE50012B043 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06F7028948DE50012B043 /* DBHelper.swift */; };
+		BAE06F772894B26A0012B043 /* DateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06F762894B26A0012B043 /* DateFunctions.swift */; };
+		BAE06F782894B26A0012B043 /* DateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06F762894B26A0012B043 /* DateFunctions.swift */; };
+		BAE06F7A2894C8EB0012B043 /* UtilityFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06F792894C8EB0012B043 /* UtilityFunctions.swift */; };
+		BAE06F7B2894C8EB0012B043 /* UtilityFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06F792894C8EB0012B043 /* UtilityFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +61,12 @@
 		BAE06F4828948CBD0012B043 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAE06F4C28948CBD0012B043 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		BAE06F4E28948CBD0012B043 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		BAE06F6428948D1F0012B043 /* InventoryGarments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryGarments.swift; sourceTree = "<group>"; };
+		BAE06F6728948D400012B043 /* Garment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Garment.swift; sourceTree = "<group>"; };
+		BAE06F6D28948DB10012B043 /* AddGarmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGarmentView.swift; sourceTree = "<group>"; };
+		BAE06F7028948DE50012B043 /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
+		BAE06F762894B26A0012B043 /* DateFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFunctions.swift; sourceTree = "<group>"; };
+		BAE06F792894C8EB0012B043 /* UtilityFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				BAE06F2728948CBC0012B043 /* Shared */,
+				BAE06F2828948CBC0012B043 /* Lululemon_DemoApp.swift */,
 				BAE06F3628948CBD0012B043 /* macOS */,
 				BAE06F3F28948CBD0012B043 /* Tests iOS */,
 				BAE06F4B28948CBD0012B043 /* Tests macOS */,
@@ -97,8 +116,10 @@
 		BAE06F2728948CBC0012B043 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				BAE06F2828948CBC0012B043 /* Lululemon_DemoApp.swift */,
-				BAE06F2928948CBC0012B043 /* ContentView.swift */,
+				BAE06F7E2894DFE00012B043 /* Models */,
+				BAE06F7D2894DFD00012B043 /* Persistance */,
+				BAE06F7F2894DFF10012B043 /* UI */,
+				BAE06F7C2894DFC40012B043 /* Utility */,
 				BAE06F2A28948CBD0012B043 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -139,6 +160,41 @@
 				BAE06F4E28948CBD0012B043 /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		BAE06F7C2894DFC40012B043 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				BAE06F762894B26A0012B043 /* DateFunctions.swift */,
+				BAE06F792894C8EB0012B043 /* UtilityFunctions.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		BAE06F7D2894DFD00012B043 /* Persistance */ = {
+			isa = PBXGroup;
+			children = (
+				BAE06F7028948DE50012B043 /* DBHelper.swift */,
+			);
+			path = Persistance;
+			sourceTree = "<group>";
+		};
+		BAE06F7E2894DFE00012B043 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BAE06F6728948D400012B043 /* Garment.swift */,
+				BAE06F6428948D1F0012B043 /* InventoryGarments.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BAE06F7F2894DFF10012B043 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BAE06F6D28948DB10012B043 /* AddGarmentView.swift */,
+				BAE06F2928948CBC0012B043 /* ContentView.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,7 +355,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAE06F6828948D400012B043 /* Garment.swift in Sources */,
+				BAE06F6E28948DB10012B043 /* AddGarmentView.swift in Sources */,
 				BAE06F5228948CBD0012B043 /* ContentView.swift in Sources */,
+				BAE06F7128948DE50012B043 /* DBHelper.swift in Sources */,
+				BAE06F6528948D1F0012B043 /* InventoryGarments.swift in Sources */,
+				BAE06F772894B26A0012B043 /* DateFunctions.swift in Sources */,
+				BAE06F7A2894C8EB0012B043 /* UtilityFunctions.swift in Sources */,
 				BAE06F5028948CBD0012B043 /* Lululemon_DemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,7 +370,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAE06F6928948D400012B043 /* Garment.swift in Sources */,
+				BAE06F6F28948DB10012B043 /* AddGarmentView.swift in Sources */,
 				BAE06F5328948CBD0012B043 /* ContentView.swift in Sources */,
+				BAE06F7228948DE50012B043 /* DBHelper.swift in Sources */,
+				BAE06F6628948D1F0012B043 /* InventoryGarments.swift in Sources */,
+				BAE06F782894B26A0012B043 /* DateFunctions.swift in Sources */,
+				BAE06F7B2894C8EB0012B043 /* UtilityFunctions.swift in Sources */,
 				BAE06F5128948CBD0012B043 /* Lululemon_DemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
