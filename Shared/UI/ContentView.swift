@@ -12,9 +12,10 @@ struct ContentView: View {
     @Environment(\.scenePhase) var scenePhase
     @Environment(\.colorScheme) var colorScheme
     
-    @StateObject private var viewModel = ContentViewModel()
+    @StateObject private var viewModel: ContentViewModel
     
-    init(){
+    init(viewModel: ContentViewModel = .init(garmentSource: DBHelper())){
+        _viewModel = StateObject(wrappedValue: viewModel)
         let appearance = UINavigationBarAppearance()
         appearance.shadowColor = .gray
         UINavigationBar.appearance().standardAppearance = appearance
@@ -108,6 +109,6 @@ struct ItemRow: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(viewModel: ContentView.ContentViewModel(garmentSource: DBHelper()))
     }
 }

@@ -10,8 +10,7 @@ import UIKit
 import SQLite3
 import SwiftUI
 
-
-class DBHelper {
+class DBHelper: PersistanceDataService {
     
     let TABLE_NAME = "Garments"
     let DATE_VAR = "date"
@@ -80,7 +79,8 @@ class DBHelper {
                   }
                   let name = String(cString: queryResultCol1)
                   let dateString = String(cString: queryResultCol2)
-                  let date = DateFunctions.convertStringToDate(dateString: dateString)
+                  let dateService = DateFunctions()
+                  let date = dateService.convertStringToDate(dateString: dateString)
                   print("Query Result:")
                   print("\(id) | \(name)")
                   let garment = Garment(creationDate: date, name: name)
@@ -107,7 +107,8 @@ class DBHelper {
             for item in garments {
 
                 let name = item.name as NSString
-                let date = DateFunctions.convertDateToString(date: item.creationDate) as NSString
+                let dateService = DateFunctions()
+                let date = dateService.convertDateToString(date: item.creationDate) as NSString
 
                 sqlite3_bind_text(insertStatement, 1, name.utf8String , -1, nil)
 
@@ -151,16 +152,15 @@ class DBHelper {
           sqlite3_finalize(deleteStatement)
     }
     
-    func readDatabase(garments: inout[Garment]) {
+    func readDatabase() -> [Garment]  {
         
-        garments.removeAll()
         openConnection()
-        garments = readTable()
+        let garments = readTable()
         sqlite3_close(db)
-        print(garments)
+        return garments
     }
     
-    func writeDatabase(garments: inout [Garment]) {
+    func writeDatabase(garments: [Garment]) {
 
         openConnection()
         createTable()

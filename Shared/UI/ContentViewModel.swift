@@ -15,7 +15,10 @@ extension ContentView {
         @Published var isSortedAlpha: Int = 0
         @Published var showingAddGarmentSheet = false
         
-        init(){
+        let garmentSource: PersistanceDataService
+        
+        init(garmentSource: PersistanceDataService){
+            self.garmentSource = garmentSource
             persistData(phase: .active)
         }
         
@@ -26,21 +29,20 @@ extension ContentView {
         
         func updateGarments(){
             
-            let util = UtilityFunctions()
+            let util = GarmentSorter()
             garments = util.sortGarments(isSortedAlpha: isSortedAlpha == 0, garments: garments)
             
             print(isSortedAlpha)
         }
         
         func persistData(phase: ScenePhase){
-            let dbHelper = DBHelper()
             
             if phase == .active {
-                dbHelper.readDatabase(garments: &garments)
+                garments = garmentSource.readDatabase()
                 updateGarments()
                 
             } else if phase == .inactive {
-                dbHelper.writeDatabase(garments: &garments)
+                garmentSource.writeDatabase(garments: garments)
                 updateGarments()
             }
         }

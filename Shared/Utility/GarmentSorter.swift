@@ -7,7 +7,7 @@
 
 import Foundation
 
-class UtilityFunctions {
+class GarmentSorter {
     
     func sortGarments(isSortedAlpha: Bool, garments: [Garment]) -> [Garment] {
         let sortedGarments = garments.sorted { (lhs, rhs) in

@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BAE06F4128948CBD0012B043 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06F4028948CBD0012B043 /* Tests_iOS.swift */; };
-		BAE06F4328948CBD0012B043 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06F4228948CBD0012B043 /* Tests_iOSLaunchTests.swift */; };
-		BAE06F4D28948CBD0012B043 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06F4C28948CBD0012B043 /* Tests_macOS.swift */; };
-		BAE06F4F28948CBD0012B043 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06F4E28948CBD0012B043 /* Tests_macOSLaunchTests.swift */; };
+		BA57EE982898F8E700467058 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA57EE972898F8E700467058 /* Protocols.swift */; };
+		BA57EE992898F8E700467058 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA57EE972898F8E700467058 /* Protocols.swift */; };
+		BA57EEA42898FAC700467058 /* Lululemon_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA57EEA32898FAC700467058 /* Lululemon_DemoTests.swift */; };
+		BA57EEAB2898FCCA00467058 /* MockDBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA80D2832898F4500081FF56 /* MockDBHelper.swift */; };
+		BA57EEAC2898FCCC00467058 /* MockDBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA80D2832898F4500081FF56 /* MockDBHelper.swift */; };
 		BAE06F5028948CBD0012B043 /* Lululemon_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06F2828948CBC0012B043 /* Lululemon_DemoApp.swift */; };
 		BAE06F5128948CBD0012B043 /* Lululemon_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06F2828948CBC0012B043 /* Lululemon_DemoApp.swift */; };
 		BAE06F5228948CBD0012B043 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06F2928948CBC0012B043 /* ContentView.swift */; };
@@ -31,40 +32,31 @@
 		BAE06F822894FBFD0012B043 /* AddGarmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06F802894FBFD0012B043 /* AddGarmentViewModel.swift */; };
 		BAE06F84289504E20012B043 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06F83289504E20012B043 /* ContentViewModel.swift */; };
 		BAE06F85289504E20012B043 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06F83289504E20012B043 /* ContentViewModel.swift */; };
-		BAE06F8728989D260012B043 /* UtilityFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06F8628989D260012B043 /* UtilityFunctions.swift */; };
-		BAE06F8828989D260012B043 /* UtilityFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06F8628989D260012B043 /* UtilityFunctions.swift */; };
+		BAE06F8728989D260012B043 /* GarmentSorter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06F8628989D260012B043 /* GarmentSorter.swift */; };
+		BAE06F8828989D260012B043 /* GarmentSorter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06F8628989D260012B043 /* GarmentSorter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		BAE06F3D28948CBD0012B043 /* PBXContainerItemProxy */ = {
+		BA57EEA52898FAC700467058 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BAE06F2328948CBC0012B043 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = BAE06F2E28948CBD0012B043;
 			remoteInfo = "Lululemon Demo (iOS)";
 		};
-		BAE06F4928948CBD0012B043 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BAE06F2328948CBC0012B043 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BAE06F3428948CBD0012B043;
-			remoteInfo = "Lululemon Demo (macOS)";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA57EE972898F8E700467058 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		BA57EEA12898FAC600467058 /* Lululemon DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lululemon DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA57EEA32898FAC700467058 /* Lululemon_DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lululemon_DemoTests.swift; sourceTree = "<group>"; };
+		BA80D2832898F4500081FF56 /* MockDBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDBHelper.swift; sourceTree = "<group>"; };
 		BAE06F2828948CBC0012B043 /* Lululemon_DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lululemon_DemoApp.swift; sourceTree = "<group>"; };
 		BAE06F2928948CBC0012B043 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BAE06F2A28948CBD0012B043 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAE06F2F28948CBD0012B043 /* Lululemon Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lululemon Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAE06F3528948CBD0012B043 /* Lululemon Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lululemon Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAE06F3728948CBD0012B043 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
-		BAE06F3C28948CBD0012B043 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BAE06F4028948CBD0012B043 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
-		BAE06F4228948CBD0012B043 /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
-		BAE06F4828948CBD0012B043 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BAE06F4C28948CBD0012B043 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
-		BAE06F4E28948CBD0012B043 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		BAE06F6428948D1F0012B043 /* InventoryGarments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryGarments.swift; sourceTree = "<group>"; };
 		BAE06F6728948D400012B043 /* Garment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Garment.swift; sourceTree = "<group>"; };
 		BAE06F6D28948DB10012B043 /* AddGarmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGarmentView.swift; sourceTree = "<group>"; };
@@ -72,10 +64,17 @@
 		BAE06F762894B26A0012B043 /* DateFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFunctions.swift; sourceTree = "<group>"; };
 		BAE06F802894FBFD0012B043 /* AddGarmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGarmentViewModel.swift; sourceTree = "<group>"; };
 		BAE06F83289504E20012B043 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
-		BAE06F8628989D260012B043 /* UtilityFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilityFunctions.swift; sourceTree = "<group>"; };
+		BAE06F8628989D260012B043 /* GarmentSorter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GarmentSorter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BA57EE9E2898FAC600467058 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BAE06F2C28948CBD0012B043 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -90,31 +89,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BAE06F3928948CBD0012B043 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BAE06F4528948CBD0012B043 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA57EEA22898FAC700467058 /* Lululemon DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA57EEA32898FAC700467058 /* Lululemon_DemoTests.swift */,
+			);
+			path = "Lululemon DemoTests";
+			sourceTree = "<group>";
+		};
 		BAE06F2228948CBC0012B043 = {
 			isa = PBXGroup;
 			children = (
 				BAE06F2728948CBC0012B043 /* Shared */,
 				BAE06F2828948CBC0012B043 /* Lululemon_DemoApp.swift */,
 				BAE06F3628948CBD0012B043 /* macOS */,
-				BAE06F3F28948CBD0012B043 /* Tests iOS */,
-				BAE06F4B28948CBD0012B043 /* Tests macOS */,
+				BA57EEA22898FAC700467058 /* Lululemon DemoTests */,
 				BAE06F3028948CBD0012B043 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -136,8 +128,7 @@
 			children = (
 				BAE06F2F28948CBD0012B043 /* Lululemon Demo.app */,
 				BAE06F3528948CBD0012B043 /* Lululemon Demo.app */,
-				BAE06F3C28948CBD0012B043 /* Tests iOS.xctest */,
-				BAE06F4828948CBD0012B043 /* Tests macOS.xctest */,
+				BA57EEA12898FAC600467058 /* Lululemon DemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -150,29 +141,11 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
-		BAE06F3F28948CBD0012B043 /* Tests iOS */ = {
-			isa = PBXGroup;
-			children = (
-				BAE06F4028948CBD0012B043 /* Tests_iOS.swift */,
-				BAE06F4228948CBD0012B043 /* Tests_iOSLaunchTests.swift */,
-			);
-			path = "Tests iOS";
-			sourceTree = "<group>";
-		};
-		BAE06F4B28948CBD0012B043 /* Tests macOS */ = {
-			isa = PBXGroup;
-			children = (
-				BAE06F4C28948CBD0012B043 /* Tests_macOS.swift */,
-				BAE06F4E28948CBD0012B043 /* Tests_macOSLaunchTests.swift */,
-			);
-			path = "Tests macOS";
-			sourceTree = "<group>";
-		};
 		BAE06F7C2894DFC40012B043 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
 				BAE06F762894B26A0012B043 /* DateFunctions.swift */,
-				BAE06F8628989D260012B043 /* UtilityFunctions.swift */,
+				BAE06F8628989D260012B043 /* GarmentSorter.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -181,6 +154,8 @@
 			isa = PBXGroup;
 			children = (
 				BAE06F7028948DE50012B043 /* DBHelper.swift */,
+				BA80D2832898F4500081FF56 /* MockDBHelper.swift */,
+				BA57EE972898F8E700467058 /* Protocols.swift */,
 			);
 			path = Persistance;
 			sourceTree = "<group>";
@@ -208,6 +183,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		BA57EEA02898FAC600467058 /* Lululemon DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA57EEA72898FAC700467058 /* Build configuration list for PBXNativeTarget "Lululemon DemoTests" */;
+			buildPhases = (
+				BA57EE9D2898FAC600467058 /* Sources */,
+				BA57EE9E2898FAC600467058 /* Frameworks */,
+				BA57EE9F2898FAC600467058 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA57EEA62898FAC700467058 /* PBXTargetDependency */,
+			);
+			name = "Lululemon DemoTests";
+			productName = "Lululemon DemoTests";
+			productReference = BA57EEA12898FAC600467058 /* Lululemon DemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		BAE06F2E28948CBD0012B043 /* Lululemon Demo (iOS) */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BAE06F5828948CBD0012B043 /* Build configuration list for PBXNativeTarget "Lululemon Demo (iOS)" */;
@@ -242,42 +235,6 @@
 			productReference = BAE06F3528948CBD0012B043 /* Lululemon Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BAE06F3B28948CBD0012B043 /* Tests iOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BAE06F5E28948CBD0012B043 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
-			buildPhases = (
-				BAE06F3828948CBD0012B043 /* Sources */,
-				BAE06F3928948CBD0012B043 /* Frameworks */,
-				BAE06F3A28948CBD0012B043 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BAE06F3E28948CBD0012B043 /* PBXTargetDependency */,
-			);
-			name = "Tests iOS";
-			productName = "Tests iOS";
-			productReference = BAE06F3C28948CBD0012B043 /* Tests iOS.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-		BAE06F4728948CBD0012B043 /* Tests macOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BAE06F6128948CBD0012B043 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
-			buildPhases = (
-				BAE06F4428948CBD0012B043 /* Sources */,
-				BAE06F4528948CBD0012B043 /* Frameworks */,
-				BAE06F4628948CBD0012B043 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BAE06F4A28948CBD0012B043 /* PBXTargetDependency */,
-			);
-			name = "Tests macOS";
-			productName = "Tests macOS";
-			productReference = BAE06F4828948CBD0012B043 /* Tests macOS.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -288,19 +245,15 @@
 				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
+					BA57EEA02898FAC600467058 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = BAE06F2E28948CBD0012B043;
+					};
 					BAE06F2E28948CBD0012B043 = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
 					BAE06F3428948CBD0012B043 = {
 						CreatedOnToolsVersion = 13.3.1;
-					};
-					BAE06F3B28948CBD0012B043 = {
-						CreatedOnToolsVersion = 13.3.1;
-						TestTargetID = BAE06F2E28948CBD0012B043;
-					};
-					BAE06F4728948CBD0012B043 = {
-						CreatedOnToolsVersion = 13.3.1;
-						TestTargetID = BAE06F3428948CBD0012B043;
 					};
 				};
 			};
@@ -319,13 +272,19 @@
 			targets = (
 				BAE06F2E28948CBD0012B043 /* Lululemon Demo (iOS) */,
 				BAE06F3428948CBD0012B043 /* Lululemon Demo (macOS) */,
-				BAE06F3B28948CBD0012B043 /* Tests iOS */,
-				BAE06F4728948CBD0012B043 /* Tests macOS */,
+				BA57EEA02898FAC600467058 /* Lululemon DemoTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BA57EE9F2898FAC600467058 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BAE06F2D28948CBD0012B043 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -342,23 +301,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BAE06F3A28948CBD0012B043 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BAE06F4628948CBD0012B043 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BA57EE9D2898FAC600467058 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA57EEA42898FAC700467058 /* Lululemon_DemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BAE06F2B28948CBD0012B043 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -366,12 +319,14 @@
 				BAE06F6828948D400012B043 /* Garment.swift in Sources */,
 				BAE06F6E28948DB10012B043 /* AddGarmentView.swift in Sources */,
 				BAE06F5228948CBD0012B043 /* ContentView.swift in Sources */,
+				BA57EE982898F8E700467058 /* Protocols.swift in Sources */,
 				BAE06F7128948DE50012B043 /* DBHelper.swift in Sources */,
+				BA57EEAB2898FCCA00467058 /* MockDBHelper.swift in Sources */,
 				BAE06F84289504E20012B043 /* ContentViewModel.swift in Sources */,
 				BAE06F6528948D1F0012B043 /* InventoryGarments.swift in Sources */,
 				BAE06F812894FBFD0012B043 /* AddGarmentViewModel.swift in Sources */,
 				BAE06F772894B26A0012B043 /* DateFunctions.swift in Sources */,
-				BAE06F8728989D260012B043 /* UtilityFunctions.swift in Sources */,
+				BAE06F8728989D260012B043 /* GarmentSorter.swift in Sources */,
 				BAE06F5028948CBD0012B043 /* Lululemon_DemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,50 +338,70 @@
 				BAE06F6928948D400012B043 /* Garment.swift in Sources */,
 				BAE06F6F28948DB10012B043 /* AddGarmentView.swift in Sources */,
 				BAE06F5328948CBD0012B043 /* ContentView.swift in Sources */,
+				BA57EE992898F8E700467058 /* Protocols.swift in Sources */,
 				BAE06F7228948DE50012B043 /* DBHelper.swift in Sources */,
+				BA57EEAC2898FCCC00467058 /* MockDBHelper.swift in Sources */,
 				BAE06F85289504E20012B043 /* ContentViewModel.swift in Sources */,
 				BAE06F6628948D1F0012B043 /* InventoryGarments.swift in Sources */,
 				BAE06F822894FBFD0012B043 /* AddGarmentViewModel.swift in Sources */,
 				BAE06F782894B26A0012B043 /* DateFunctions.swift in Sources */,
-				BAE06F8828989D260012B043 /* UtilityFunctions.swift in Sources */,
+				BAE06F8828989D260012B043 /* GarmentSorter.swift in Sources */,
 				BAE06F5128948CBD0012B043 /* Lululemon_DemoApp.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BAE06F3828948CBD0012B043 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BAE06F4328948CBD0012B043 /* Tests_iOSLaunchTests.swift in Sources */,
-				BAE06F4128948CBD0012B043 /* Tests_iOS.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BAE06F4428948CBD0012B043 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BAE06F4F28948CBD0012B043 /* Tests_macOSLaunchTests.swift in Sources */,
-				BAE06F4D28948CBD0012B043 /* Tests_macOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BAE06F3E28948CBD0012B043 /* PBXTargetDependency */ = {
+		BA57EEA62898FAC700467058 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BAE06F2E28948CBD0012B043 /* Lululemon Demo (iOS) */;
-			targetProxy = BAE06F3D28948CBD0012B043 /* PBXContainerItemProxy */;
-		};
-		BAE06F4A28948CBD0012B043 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BAE06F3428948CBD0012B043 /* Lululemon Demo (macOS) */;
-			targetProxy = BAE06F4928948CBD0012B043 /* PBXContainerItemProxy */;
+			targetProxy = BA57EEA52898FAC700467058 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		BA57EEA82898FAC700467058 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2KLC5XX3QG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Swiftech.Lululemon-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lululemon Demo.app/Lululemon Demo";
+			};
+			name = Debug;
+		};
+		BA57EEA92898FAC700467058 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2KLC5XX3QG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Swiftech.Lululemon-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lululemon Demo.app/Lululemon Demo";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		BAE06F5628948CBD0012B043 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -545,6 +520,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2KLC5XX3QG;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_TESTABILITY = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -575,6 +551,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2KLC5XX3QG;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_TESTABILITY = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -653,88 +630,18 @@
 			};
 			name = Release;
 		};
-		BAE06F5F28948CBD0012B043 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2KLC5XX3QG;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Swiftech.Tests-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Lululemon Demo (iOS)";
-			};
-			name = Debug;
-		};
-		BAE06F6028948CBD0012B043 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2KLC5XX3QG;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Swiftech.Tests-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Lululemon Demo (iOS)";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		BAE06F6228948CBD0012B043 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2KLC5XX3QG;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Swiftech.Tests-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "Lululemon Demo (macOS)";
-			};
-			name = Debug;
-		};
-		BAE06F6328948CBD0012B043 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2KLC5XX3QG;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Swiftech.Tests-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "Lululemon Demo (macOS)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BA57EEA72898FAC700467058 /* Build configuration list for PBXNativeTarget "Lululemon DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA57EEA82898FAC700467058 /* Debug */,
+				BA57EEA92898FAC700467058 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BAE06F2628948CBC0012B043 /* Build configuration list for PBXProject "Lululemon Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -758,24 +665,6 @@
 			buildConfigurations = (
 				BAE06F5C28948CBD0012B043 /* Debug */,
 				BAE06F5D28948CBD0012B043 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BAE06F5E28948CBD0012B043 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BAE06F5F28948CBD0012B043 /* Debug */,
-				BAE06F6028948CBD0012B043 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BAE06F6128948CBD0012B043 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BAE06F6228948CBD0012B043 /* Debug */,
-				BAE06F6328948CBD0012B043 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

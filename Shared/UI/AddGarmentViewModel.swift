@@ -26,7 +26,7 @@ extension AddGarmentView {
         func addNewGarment(){
             let newItem = Garment(creationDate: Date(), name: garment)
             inventoryItems.append(newItem)
-            let util = UtilityFunctions()
+            let util = GarmentSorter()
             inventoryItems = util.sortGarments(isSortedAlpha: isSortedAlpha == 0, garments: inventoryItems)
         }
     }
