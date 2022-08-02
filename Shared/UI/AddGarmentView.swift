@@ -14,15 +14,16 @@ struct AddGarmentView: View {
     @Environment(\.dismiss) var dismiss
     @Environment(\.colorScheme) var colorScheme
     
-    @Binding var inventoryItems: [Garment]
-    @Binding var isSortedAlpha: Int
-    @Binding var isPresented: Bool
+    @StateObject private var viewModel: AddGarmentViewModel
     
-    @State private var garment = ""
+    init(viewModel: AddGarmentViewModel){
+        self._viewModel = StateObject(wrappedValue: viewModel)
+    }
+
     
     var body: some View {
             
-        if isPresented {
+        if viewModel.isPresented {
             
             
             VStack(alignment: .leading){
@@ -40,9 +41,7 @@ struct AddGarmentView: View {
                         Text("ADD")
                         Spacer()
                         Button(action: {
-                            let newItem = Garment(creationDate: Date(), name: garment)
-                            inventoryItems.append(newItem)
-                            inventoryItems = UtilityFunctions.sortGarments(isSortedAlpha: isSortedAlpha == 0, garments: inventoryItems)
+                            viewModel.addNewGarment()
                             presentationMode.wrappedValue.dismiss()
 
                         }) {
@@ -53,7 +52,7 @@ struct AddGarmentView: View {
                 }
 
                 Text("Garment Name:")
-                TextField("", text: $garment)
+                TextField("", text: $viewModel.garment)
                     .accessibilityLabel("addShortDescription")
                     .textFieldStyle(.roundedBorder)
                 Spacer()
@@ -64,7 +63,7 @@ struct AddGarmentView: View {
             VStack(alignment: .leading){
                                 
                 Text("Garment Name:")
-                TextField("", text: $garment)
+                TextField("", text: $viewModel.garment)
                     .accessibilityLabel("addShortDescription")
                     .textFieldStyle(.roundedBorder)
                 Spacer()
@@ -81,9 +80,7 @@ struct AddGarmentView: View {
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Save") {
-                        let newItem = Garment(creationDate: Date(), name: garment)
-                        inventoryItems.append(newItem)
-                        inventoryItems = UtilityFunctions.sortGarments(isSortedAlpha: isSortedAlpha == 0, garments: inventoryItems)
+                        viewModel.addNewGarment()
                         presentationMode.wrappedValue.dismiss()
                     }
                     .foregroundColor(colorScheme == .dark ? .white : .black)
@@ -96,9 +93,15 @@ struct AddGarmentView: View {
 }
 
 
+
 struct AddItemView_Previews: PreviewProvider {
+    
+    
     static var previews: some View {
-        AddGarmentView(inventoryItems: Binding<[Garment]>.constant([Garment]()), isSortedAlpha: Binding<Int>.constant(0), isPresented: Binding<Bool>.constant(true))
-        }
+        
+        let viewModel = AddGarmentView.AddGarmentViewModel(inventoryItems: Binding<[Garment]>.constant([Garment]()), isSortedAlpha: Binding<Int>.constant(0), isPresented: Binding<Bool>.constant(true))
+
+        AddGarmentView(viewModel: viewModel)
     }
+}
 

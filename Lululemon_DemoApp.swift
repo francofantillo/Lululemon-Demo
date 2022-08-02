@@ -9,14 +9,10 @@ import SwiftUI
 
 @main
 struct Lululemon_DemoApp: App {
-
-    @StateObject private var inventoryItems = InventoryGarments()
     
     var body: some Scene {
         WindowGroup {
-
             ContentView()
-                .environmentObject(inventoryItems)
         }
     }
 }

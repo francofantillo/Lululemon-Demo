@@ -27,8 +27,12 @@
 		BAE06F7228948DE50012B043 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06F7028948DE50012B043 /* DBHelper.swift */; };
 		BAE06F772894B26A0012B043 /* DateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06F762894B26A0012B043 /* DateFunctions.swift */; };
 		BAE06F782894B26A0012B043 /* DateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06F762894B26A0012B043 /* DateFunctions.swift */; };
-		BAE06F7A2894C8EB0012B043 /* UtilityFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06F792894C8EB0012B043 /* UtilityFunctions.swift */; };
-		BAE06F7B2894C8EB0012B043 /* UtilityFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06F792894C8EB0012B043 /* UtilityFunctions.swift */; };
+		BAE06F812894FBFD0012B043 /* AddGarmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06F802894FBFD0012B043 /* AddGarmentViewModel.swift */; };
+		BAE06F822894FBFD0012B043 /* AddGarmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06F802894FBFD0012B043 /* AddGarmentViewModel.swift */; };
+		BAE06F84289504E20012B043 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06F83289504E20012B043 /* ContentViewModel.swift */; };
+		BAE06F85289504E20012B043 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06F83289504E20012B043 /* ContentViewModel.swift */; };
+		BAE06F8728989D260012B043 /* UtilityFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06F8628989D260012B043 /* UtilityFunctions.swift */; };
+		BAE06F8828989D260012B043 /* UtilityFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06F8628989D260012B043 /* UtilityFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +70,9 @@
 		BAE06F6D28948DB10012B043 /* AddGarmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGarmentView.swift; sourceTree = "<group>"; };
 		BAE06F7028948DE50012B043 /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
 		BAE06F762894B26A0012B043 /* DateFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFunctions.swift; sourceTree = "<group>"; };
-		BAE06F792894C8EB0012B043 /* UtilityFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityFunctions.swift; sourceTree = "<group>"; };
+		BAE06F802894FBFD0012B043 /* AddGarmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGarmentViewModel.swift; sourceTree = "<group>"; };
+		BAE06F83289504E20012B043 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		BAE06F8628989D260012B043 /* UtilityFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilityFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,7 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				BAE06F762894B26A0012B043 /* DateFunctions.swift */,
-				BAE06F792894C8EB0012B043 /* UtilityFunctions.swift */,
+				BAE06F8628989D260012B043 /* UtilityFunctions.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -192,7 +198,9 @@
 			isa = PBXGroup;
 			children = (
 				BAE06F6D28948DB10012B043 /* AddGarmentView.swift */,
+				BAE06F802894FBFD0012B043 /* AddGarmentViewModel.swift */,
 				BAE06F2928948CBC0012B043 /* ContentView.swift */,
+				BAE06F83289504E20012B043 /* ContentViewModel.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -359,9 +367,11 @@
 				BAE06F6E28948DB10012B043 /* AddGarmentView.swift in Sources */,
 				BAE06F5228948CBD0012B043 /* ContentView.swift in Sources */,
 				BAE06F7128948DE50012B043 /* DBHelper.swift in Sources */,
+				BAE06F84289504E20012B043 /* ContentViewModel.swift in Sources */,
 				BAE06F6528948D1F0012B043 /* InventoryGarments.swift in Sources */,
+				BAE06F812894FBFD0012B043 /* AddGarmentViewModel.swift in Sources */,
 				BAE06F772894B26A0012B043 /* DateFunctions.swift in Sources */,
-				BAE06F7A2894C8EB0012B043 /* UtilityFunctions.swift in Sources */,
+				BAE06F8728989D260012B043 /* UtilityFunctions.swift in Sources */,
 				BAE06F5028948CBD0012B043 /* Lululemon_DemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,9 +384,11 @@
 				BAE06F6F28948DB10012B043 /* AddGarmentView.swift in Sources */,
 				BAE06F5328948CBD0012B043 /* ContentView.swift in Sources */,
 				BAE06F7228948DE50012B043 /* DBHelper.swift in Sources */,
+				BAE06F85289504E20012B043 /* ContentViewModel.swift in Sources */,
 				BAE06F6628948D1F0012B043 /* InventoryGarments.swift in Sources */,
+				BAE06F822894FBFD0012B043 /* AddGarmentViewModel.swift in Sources */,
 				BAE06F782894B26A0012B043 /* DateFunctions.swift in Sources */,
-				BAE06F7B2894C8EB0012B043 /* UtilityFunctions.swift in Sources */,
+				BAE06F8828989D260012B043 /* UtilityFunctions.swift in Sources */,
 				BAE06F5128948CBD0012B043 /* Lululemon_DemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
